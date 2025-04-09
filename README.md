@@ -10,19 +10,18 @@ You can expect for this gem to produce a `coverage.json` file, located at the `c
 
 Depending on your `SimpleCoV`'s settings you will experiment different outcomes. Particularly depending on which type of coverage are you running `SimpleCov` with:
 
-- If you configure `SimpleCov` to run with `branch` coverage you should expect an output formatted like [sample_with_branch.json](https://github.com/fede-moya/simplecov_json_formatter/blob/master/spec/fixtures/sample_with_branch.json)
-- Otherwise you should expect an output formatted like [sample.json](https://github.com/fede-moya/simplecov_json_formatter/blob/master/spec/fixtures/sample.json)
+- If you configure `SimpleCov` to run with `branch` coverage you should expect an output formatted like [sample_with_branch.json](https://github.com/codeclimate-community/simplecov_json_formatter/blob/master/spec/fixtures/sample_with_branch.json)
+- Otherwise you should expect an output formatted like [sample.json](https://github.com/codeclimate-community/simplecov_json_formatter/blob/master/spec/fixtures/sample.json)
 
 ## Development
 
-We encourage you to use docker for common operations like running tests, or debugging your code. Running `make sh` will start a new container instance based on the `Dockerfile` provided at root, finally a shell prompt will be displayed on your terminal. Also, syncronization with your local files will be already set.
+### Setup
+
+Run `bundle install` to install dependencies needed for local development.
 
 ### Tests
-`make test` will trigger the excution of both running tests and running rubocop as linter, by simply running `rake`, this actions will be run inside a new container but using your local files.
 
-### Format
-
-`make format` will run `rubocop -a` which stands for _autocorrect_ and format your code according to the `.rubocop.yml` config file.
+`bundle exec rspec` will trigger the excution of running tests.
 
 ## Copyright
 
